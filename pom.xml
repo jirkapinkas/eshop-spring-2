@@ -191,7 +191,7 @@
 				<configuration>
 					<scanIntervalSeconds>3</scanIntervalSeconds>
 					<webAppConfig>
-						<contextPath>/eshop-web</contextPath>
+						<contextPath>/</contextPath>
 						<extraClasspath>eshop-web/target/classes;
 							eshop-service/target/classes;
 							eshop-repository/target/classes</extraClasspath>
