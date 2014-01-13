@@ -11,8 +11,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import cz.jiripinkas.example.eshop.entity.Item;
 import cz.jiripinkas.example.eshop.entity.OrderedItem;
+import cz.jiripinkas.example.eshop.entity.Role;
 import cz.jiripinkas.example.eshop.entity.UserOrder;
 import cz.jiripinkas.example.eshop.repository.OrderedItemRepository;
+import cz.jiripinkas.example.eshop.repository.RoleRepository;
 
 @Service
 @Transactional
@@ -27,11 +29,27 @@ public class DbInitService {
 	@Autowired
 	private OrderedItemRepository orderedItemRepository;
 
+	@Autowired
+	private RoleRepository roleRepository;
+
 	// initialize database each day
 	// @Scheduled(fixedDelay = 86400000)
 	@PostConstruct
 	public void init() {
 		System.out.println("*** START INIT DATABASE ***");
+
+		{
+			Role role = new Role();
+			role.setName("ROLE_USER");
+			roleRepository.save(role);
+		}
+
+		{
+			Role role = new Role();
+			role.setName("ROLE_ADMIN");
+			roleRepository.save(role);
+		}
+
 		{
 			Item item = new Item();
 			item.setName("Java in 21 days");

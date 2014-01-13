@@ -3,6 +3,7 @@ package cz.jiripinkas.example.eshop.entity;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -28,7 +29,7 @@ public class OrderedItem implements Serializable {
 	@JoinColumn(name = "USER_ORDER_ID")
 	private UserOrder userOrder;
 
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name = "ITEM_ID")
 	private Item item;
 

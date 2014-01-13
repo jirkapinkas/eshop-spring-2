@@ -7,6 +7,9 @@
 		<class>cz.jiripinkas.example.eshop.entity.Item</class>
 		<class>cz.jiripinkas.example.eshop.entity.UserOrder</class>
 		<class>cz.jiripinkas.example.eshop.entity.OrderedItem</class>
+		<class>cz.jiripinkas.example.eshop.entity.Role</class>
+		<class>cz.jiripinkas.example.eshop.entity.User</class>
+		<class>cz.jiripinkas.example.eshop.entity.UserRole</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:mem:test" />

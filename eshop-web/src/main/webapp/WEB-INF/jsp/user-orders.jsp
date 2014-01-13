@@ -15,6 +15,7 @@
 			<th>name</th>
 			<th>order date</th>
 			<th>ordered items</th>
+			<th>edit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -28,6 +29,9 @@
 				<c:forEach items="${uo.orderedItems}" var="oi">
 					${oi.item.name}: ${oi.quantity}<br/>
 				</c:forEach>
+				</td>
+				<td>
+					<a href="user-orders.html?id=${uo.userOrderId}" class="btn btn-primary">Detail</a>
 				</td>
 			</tr>
 		</c:forEach>

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import cz.jiripinkas.example.eshop.entity.Item;
+import cz.jiripinkas.example.eshop.exception.ItemNotFoundException;
 import cz.jiripinkas.example.eshop.repository.ItemRepository;
 
 @Service
@@ -21,7 +22,11 @@ public class ItemService {
 	}
 
 	public Item findOne(int itemId) {
-		return itemRepository.findOne(itemId);
+		Item item = itemRepository.findOne(itemId);
+		if(item == null) {
+			throw new ItemNotFoundException("");
+		}
+		return item;
 	}
 
 	public List<Item> findAll() {

@@ -21,7 +21,7 @@ public class UserOrderService {
 	}
 
 	public UserOrder findOne(int userOrderId) {
-		return userOrderRepository.findOne(userOrderId);
+		return userOrderRepository.findOneFetch(userOrderId);
 	}
 
 	public List<UserOrder> findAll() {
