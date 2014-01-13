@@ -20,9 +20,7 @@ public class RegisterController {
 
 	@ModelAttribute
 	public User create() {
-		User user = new User();
-		user.setName("TODO VYPLN");
-		return user;
+		return new User();
 	}
 
 	@RequestMapping(value = "/register", method = RequestMethod.GET)

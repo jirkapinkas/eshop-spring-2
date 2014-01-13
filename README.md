@@ -1,6 +1,6 @@
-<h1>Just a simple application to showcase how to create eshop in Spring framework</h1>
+<h1>Enhanced EShop project with Spring Data JPA & Spring Security</h1>
 
-<p>This project is to showcase Spring, Spring Web MVC, JSPs, JSTL and three tier architecture. 
+<p>This project is to showcase Spring, Spring Web MVC, Spring Data JPA, Spring Security, JSPs, JSTL and three tier architecture. 
 Based on Maven, Hibernate, HSQLDB and Twitter Bootstrap.</p>
 
 <p>This project contains embedded HSQL database, which destroys all
@@ -18,12 +18,6 @@ Based on Maven, Hibernate, HSQLDB and Twitter Bootstrap.</p>
 	<code>mvn package</code>
 </p>
 
-<p>
-	You can deploy this web application to <a href="http://www.heroku.com"
-		target="_blank">Heroku</a>. Live preview is here: <a
-		href="http://example-eshop-spring.jiripinkas.cz" target="_blank">http://example-eshop-spring.jiripinkas.cz</a>
-</p>
-
 <h2>My other projects:</h2>
 
 <ul>
@@ -36,7 +30,7 @@ Based on Maven, Hibernate, HSQLDB and Twitter Bootstrap.</p>
 		target="_blank" title="Website monitoring software">Website
 			monitoring software</a> (free OSS software)</li>
 	<li><a href="http://www.java-skoleni.cz" target="_blank"
-		title="Java školení">Java školení</a> (in Czech)</li>
+		title="Java ï¿½kolenï¿½">Java ï¿½kolenï¿½</a> (in Czech)</li>
 	<li><a href="http://www.sql-skoleni.cz" target="_blank"
-		title="Java školení">SQL školení</a> (in Czech)</li>
+		title="Java ï¿½kolenï¿½">SQL ï¿½kolenï¿½</a> (in Czech)</li>
 </ul>
